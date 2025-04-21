@@ -10,4 +10,3 @@ def countWellFormedParenthesis(n):
         return count
 
     return backtrack(0, 0)
-print("Hello python")
