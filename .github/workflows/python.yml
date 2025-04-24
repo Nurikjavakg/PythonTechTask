@@ -22,5 +22,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt || true
 
-      - name: Run tests
-        run: python -m unittest discover
+      - name: Run functional tests
+        run: python -m unittest tests/test_functional.py
+
+      - name: Run performance tests
+        run: python -m unittest tests/test_performance.py

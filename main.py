@@ -10,3 +10,6 @@ def countWellFormedParenthesis(n):
         return count
 
     return backtrack(0, 0)
+
+if __name__ == "__main__":
+    print(countWellFormedParenthesis(6))
